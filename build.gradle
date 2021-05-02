@@ -21,10 +21,10 @@ repositories {
         name = 'deltapvp-repo'
         url = 'https://nexus.deltapvp.net/repository/all/'
     }
-    /*maven {
+    maven {
         name = 'new-deltapvp-repo'
         url = 'https://repos.deltapvp.net/all/'
-    }*/
+    }
     mavenLocal()
 }
 
