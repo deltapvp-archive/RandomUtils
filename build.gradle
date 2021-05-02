@@ -4,9 +4,9 @@ plugins {
     id 'java'
     id 'java-library'
     id "org.sonarqube" version '3.1.1'
-    id 'net.kyori.indra' version '2.0.0'
-    id 'net.kyori.indra.publishing' version '2.0.0'
-    id 'net.kyori.indra.git' version '2.0.0'
+    id 'net.kyori.indra' version '2.0.1'
+    id 'net.kyori.indra.publishing' version '2.0.1'
+    id 'net.kyori.indra.git' version '2.0.1'
 }
 
 group = 'net.deltapvp'
@@ -55,8 +55,9 @@ sonarqube {
 indra {
     github('powercasgamer', 'RandomUtils')
 
-    publishReleasesTo('delta', 'https://repos.deltapvp.net/all/')
-    publishSnapshotsTo('delta', 'https://repos.deltapvp.net/all/')
+    publishAllTo('delta', "https://repos.deltapvp.net/all/")
+    publishReleasesTo('delta', 'https://repos.deltapvp.net/releases/')
+    publishSnapshotsTo('delta', 'https://repos.deltapvp.net/snapshots/')
 
     javaVersions {
         testWith(8, 11)

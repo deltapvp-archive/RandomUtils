@@ -18,9 +18,9 @@ public class ServerUtil {
     }
 
     /**
-     * Broadcast an {@link List<Component>} to everyone on the server.
+     * Broadcast an {@link Component} to everyone on the server.
      *
-     * @param components the {@link List<Component>} to send to everyone on the server.
+     * @param components the {@link Component} to send to everyone on the server.
      */
     public static void broadcast(List<Component> components) {
         for (Component component : components) {
