@@ -1,0 +1,5 @@
+name: RandomUtils
+version: @version@
+main: net.deltapvp.randomutils.RandomUtils
+api-version: 1.16
+authors: [powercas_gamer]
