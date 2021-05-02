@@ -38,11 +38,11 @@ dependencies {
     api 'net.kyori:adventure-text-serializer-gson:4.7.0'
 }
 
-processResources {
+/*processResources {
     from(sourceSets.main.resources.srcDirs) {
         filter ReplaceTokens, tokens: [version: version]
     }
-}
+}*/
 
 sonarqube {
     properties {
