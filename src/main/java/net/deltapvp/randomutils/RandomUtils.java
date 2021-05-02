@@ -9,8 +9,13 @@ public final class RandomUtils extends JavaPlugin {
     private BukkitAudiences adventure;
 
     @Override
-    public void onEnable() {
+    public void onLoad() {
         instance = this;
+        this.adventure = BukkitAudiences.create(this);
+    }
+
+    @Override
+    public void onEnable() {
     }
 
     @Override
@@ -22,10 +27,14 @@ public final class RandomUtils extends JavaPlugin {
         return instance;
     }
 
+    public static void init() {
+        new RandomUtils();
+    }
+
+    public RandomUtils() {
+    }
+
     public BukkitAudiences getAdventure() {
-        if (this.adventure == null) {
-            this.adventure = BukkitAudiences.create(this);
-        }
         return this.adventure;
     }
 }
