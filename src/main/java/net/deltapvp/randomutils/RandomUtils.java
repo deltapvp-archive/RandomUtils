@@ -11,11 +11,11 @@ public final class RandomUtils extends JavaPlugin {
     @Override
     public void onLoad() {
         instance = this;
-        this.adventure = BukkitAudiences.create(this);
     }
 
     @Override
     public void onEnable() {
+        this.adventure = BukkitAudiences.create(this);
     }
 
     @Override

@@ -4,9 +4,12 @@
 [![Quality Gate Status](https://sonarcloud.io/api/project_badges/measure?project=powercasgamer_RandomUtils&metric=alert_status)](https://sonarcloud.io/dashboard?id=powercasgamer_RandomUtils)
 [![Lines of Code](https://sonarcloud.io/api/project_badges/measure?project=powercasgamer_RandomUtils&metric=ncloc)](https://sonarcloud.io/dashboard?id=powercasgamer_RandomUtils)
 [![Maintainability Rating](https://sonarcloud.io/api/project_badges/measure?project=powercasgamer_RandomUtils&metric=sqale_rating)](https://sonarcloud.io/dashboard?id=powercasgamer_RandomUtils)
-Version: 1.0-SNAPSHOT
+![Latest Stable Version](https://img.shields.io/github/v/tag/powercasgamer/RandomUtils?sort=semver)
+![Latest Version](https://img.shields.io/maven-metadata/v?metadataUrl=https%3A%2F%2Frepos.deltapvp.net%2Fall%2Fnet%2Fdeltapvp%2FRandomUtils%2Fmaven-metadata.xml)
 ---
 ## How to use
+
+JavaDocs: [Link](https://powercasgamer.github.io/RandomUtils)
 
 First you'll want to add RandomUtils as a dependency
 Replace `<version>` with the version tag
