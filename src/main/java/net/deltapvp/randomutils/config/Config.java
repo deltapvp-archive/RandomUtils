@@ -15,6 +15,8 @@ public class Config {
     private final YamlConfiguration configuration;
 
     /**
+     * Create the config
+     *
      * @param plugin    the {@link JavaPlugin} where this {@link Config} belongs to
      * @param name      the name of this {@link Config} file
      * @param overwrite if it should overwrite the file if one exists
@@ -27,6 +29,8 @@ public class Config {
     }
 
     /**
+     * Create the config
+     *
      * @param plugin the {@link JavaPlugin} where this {@link Config} belongs to
      * @param name   the name of this {@link Config} file
      */
