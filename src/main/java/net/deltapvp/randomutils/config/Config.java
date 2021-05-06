@@ -10,6 +10,7 @@ import java.util.List;
 @SuppressWarnings("unused")
 public class Config {
 
+    private final JavaPlugin plugin;
     private final File file;
     private final YamlConfiguration configuration;
 
@@ -19,6 +20,7 @@ public class Config {
      * @param overwrite if it should overwrite the file if one exists
      */
     public Config(JavaPlugin plugin, String name, boolean overwrite) {
+        this.plugin = plugin;
         this.file = new File(plugin.getDataFolder(), name + ".yml");
         plugin.saveResource(name + ".yml", overwrite);
         this.configuration = YamlConfiguration.loadConfiguration(this.file);
@@ -36,7 +38,7 @@ public class Config {
      * get the {@link String} value of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link String} value or the default
      */
     public String getString(String path, String def) {
@@ -57,7 +59,7 @@ public class Config {
      * get the {@link Boolean} value of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link Boolean} value or the default
      */
     public boolean getBoolean(String path, boolean def) {
@@ -78,7 +80,7 @@ public class Config {
      * get the {@link Long} value of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link Long} value or the default
      */
     public long getLong(String path, long def) {
@@ -99,7 +101,7 @@ public class Config {
      * get the {@link Integer} value of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link Integer} value or the default
      */
     public int getInt(String path, int def) {
@@ -117,10 +119,31 @@ public class Config {
     }
 
     /**
+     * get the {@link Double} value of a path
+     *
+     * @param path the path of it
+     * @param def  default if path does not exist
+     * @return the {@link Double} value or the default
+     */
+    public double getDouble(String path, double def) {
+        return configuration.getDouble(path, def);
+    }
+
+    /**
+     * get the {@link Double} value of a path
+     *
+     * @param path the path of it
+     * @return the {@link Double} value or 0
+     */
+    public double getDouble(String path) {
+        return getDouble(path, 0.0);
+    }
+
+    /**
      * get the {@link Object} of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link Object} value or the default
      */
     public Object get(String path, Object def) {
@@ -141,7 +164,7 @@ public class Config {
      * get the {@link List<String>} value of a path
      *
      * @param path the path of it
-     * @param def default if path does not exist
+     * @param def  default if path does not exist
      * @return the {@link List<String>} value or the default
      */
     public List<String> getStringList(String path, List<String> def) {
@@ -155,7 +178,7 @@ public class Config {
      * get the {@link List<String>} value of a path
      *
      * @param path the path of it
-     * @return the {@link List<String>} value or the default
+     * @return the {@link List<String>} value or an empty {@link List}
      */
     public List<String> getStringList(String path) {
         return getStringList(path, Collections.emptyList());
@@ -176,7 +199,7 @@ public class Config {
      * @return the {@link JavaPlugin} of this config file
      */
     public JavaPlugin getPlugin() {
-        return this.getPlugin();
+        return this.plugin;
     }
 
     /**
