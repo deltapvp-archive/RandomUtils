@@ -180,6 +180,30 @@ public class Config {
      * @param path the path of it
      * @return the {@link List} value or an empty {@link List}
      */
+    public List<?> etList(String path) {
+        return getList(path, Collections.emptyList());
+    }
+
+    /**
+     * get the {@link List} value of a path
+     *
+     * @param path the path of it
+     * @param def  default if path does not exist
+     * @return the {@link List} value or the default
+     */
+    public List<?> getList(String path, List<?> def) {
+        if (this.configuration.contains(path)) {
+            return this.configuration.getList(path);
+        }
+        return def;
+    }
+
+    /**
+     * get the {@link List} value of a path
+     *
+     * @param path the path of it
+     * @return the {@link List} value or an empty {@link List}
+     */
     public List<String> getStringList(String path) {
         return getStringList(path, Collections.emptyList());
     }
