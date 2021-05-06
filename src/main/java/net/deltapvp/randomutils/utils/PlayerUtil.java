@@ -62,4 +62,14 @@ public class PlayerUtil {
     public static void sendMessage(Player player, ComponentLike component) {
         sendMessage(player, Collections.singletonList(component));
     }
+
+    /**
+     * Get a {@link Player}'s ping
+     *
+     * @param player the {@link Player}
+     * @return an {@link Integer} of the {@link Player}'s ping
+     */
+    public static int getPing(Player player) {
+        return BukkitReflection.getPing(player);
+    }
 }
