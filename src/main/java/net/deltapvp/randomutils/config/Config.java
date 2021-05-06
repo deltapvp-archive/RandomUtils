@@ -161,11 +161,11 @@ public class Config {
     }
 
     /**
-     * get the {@link List<String>} value of a path
+     * get the {@link List} value of a path
      *
      * @param path the path of it
      * @param def  default if path does not exist
-     * @return the {@link List<String>} value or the default
+     * @return the {@link List} value or the default
      */
     public List<String> getStringList(String path, List<String> def) {
         if (this.configuration.contains(path)) {
@@ -175,10 +175,10 @@ public class Config {
     }
 
     /**
-     * get the {@link List<String>} value of a path
+     * get the {@link List} value of a path
      *
      * @param path the path of it
-     * @return the {@link List<String>} value or an empty {@link List}
+     * @return the {@link List} value or an empty {@link List}
      */
     public List<String> getStringList(String path) {
         return getStringList(path, Collections.emptyList());
