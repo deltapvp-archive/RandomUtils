@@ -71,7 +71,7 @@ public class CC {
 
     /**
      * @param lines the input to translate
-     * @return the {@link List<String>} input in color codes
+     * @return the {@link List} input in color codes
      */
     public static List<String> translate(List<String> lines) {
         List<String> toReturn = new ArrayList<>();
