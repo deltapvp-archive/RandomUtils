@@ -11,6 +11,11 @@ import java.util.List;
 
 public class PlayerUtil {
 
+    /**
+     * Resets a {@link Player}
+     *
+     * @param player the {@link Player} to reset
+     */
     public static void resetPlayer(Player player) {
         for (PotionEffect potionEffect : player.getActivePotionEffects()) {
             player.removePotionEffect(potionEffect.getType());
@@ -36,12 +41,24 @@ public class PlayerUtil {
         player.spigot().setCollidesWithEntities(true);
     }
 
+    /**
+     * Sends a {@link List<ComponentLike>} to the player
+     *
+     * @param player to send the {@link List<ComponentLike>} to
+     * @param components a {@link List<ComponentLike>} to send to the {@link Player}
+     */
     public static void sendMessage(Player player, List<ComponentLike> components) {
         for (ComponentLike componentLike : components) {
             RandomUtils.getInstance().getAdventure().player(player).sendMessage(componentLike);
         }
     }
 
+    /**
+     * Send a {@link ComponentLike} to a player
+     *
+     * @param player the @{link Player} to send the message to
+     * @param component the {@link ComponentLike} to send to the {@link Player}
+     */
     public static void sendMessage(Player player, ComponentLike component) {
         sendMessage(player, Collections.singletonList(component));
     }
