@@ -7,7 +7,6 @@ import net.kyori.adventure.text.serializer.legacy.LegacyComponentSerializer;
 public class TextUtil {
 
     /**
-     *
      * @param input the string to serialize to a {@link Component}
      * @return the parsed {@link Component}
      */

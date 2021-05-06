@@ -44,7 +44,7 @@ public class PlayerUtil {
     /**
      * Sends a {@link List} to the player
      *
-     * @param player to send the {@link List} to
+     * @param player     to send the {@link List} to
      * @param components a {@link List} to send to the {@link Player}
      */
     public static void sendMessage(Player player, List<ComponentLike> components) {
@@ -56,7 +56,7 @@ public class PlayerUtil {
     /**
      * Send a {@link ComponentLike} to a player
      *
-     * @param player the @{link Player} to send the message to
+     * @param player    the @{link Player} to send the message to
      * @param component the {@link ComponentLike} to send to the {@link Player}
      */
     public static void sendMessage(Player player, ComponentLike component) {

@@ -2,12 +2,11 @@ package net.deltapvp.randomutils.utils;
 
 import org.bukkit.Bukkit;
 import org.bukkit.entity.Player;
-import org.bukkit.inventory.ItemStack;
 
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 
-public class BukkitReflection {
+final class BukkitReflection {
 
     private static final String CRAFT_BUKKIT_PACKAGE;
     private static final String NET_MINECRAFT_SERVER_PACKAGE;

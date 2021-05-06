@@ -2,7 +2,8 @@ package net.deltapvp.randomutils.utils;
 
 import org.bukkit.ChatColor;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.List;
 
 @SuppressWarnings("unused")
 public class CC {
