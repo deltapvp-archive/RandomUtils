@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"net.deltapvp.randomutils"},{"l":"net.deltapvp.randomutils.utils"}]
+packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"net.deltapvp.randomutils"},{"l":"net.deltapvp.randomutils.config"},{"l":"net.deltapvp.randomutils.utils"}]
