@@ -69,7 +69,7 @@ compileJava {
 
 javadoc {
     title = "${project.name} API (v ${project.version})"
-    options.links(
+    /*options.links(
             'https://papermc.io/javadocs/paper/1.12/',
             'https://ci.md-5.net/job/BungeeCord/ws/api/target/apidocs/',
             'https://hub.spigotmc.org/javadocs/spigot/',
@@ -81,6 +81,6 @@ javadoc {
             'https://jd.adventure.kyori.net/text-serializer-gson/4.7.0/',
             'https://jd.adventure.kyori.net/key/4.7.0/',
             'https://docs.oracle.com/javase/8/docs/api/'
-    )
+    )*/
     options.addBooleanOption('Xdoclint:none', true)
 }
